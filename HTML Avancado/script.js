@@ -1,28 +1,21 @@
-//let image = document.getElementById("like");
+let quadrado = document.getElementById("quadrado");
 
-//image.addEventListener("click", clicar);
-/*
-function clicar(){
-    //image.setAttribute("src", "./ensaio-7.jpg");
-    //image.src = "./ensaio-7.jpg";
+let xInicial = 0;
+let yInicial = 0;
 
-    //image.setAttribute("cor", "vermelho") //criar atributo que não existe
-
+function move(x, y){
     
-}
-*/
-let lista = document.getElementById("lista");
-lista.dataset.n = "4";
-//let num = parseInt(lista.getAttribute("num"));
-let num = parseInt(lista.dataset.n);
+    let posX = x + "px";
+    let posY = y + "px";
 
+    quadrado.style.top = posX;
+    quadrado.style.left = posY;
 
-
-let conteudo = ""
-
-for(let i = 0; i < num; i++)
-{
-    conteudo += "<li>" + i + "</li>";
 }
 
-lista.innerHTML = conteudo;
+setInterval(function(){
+
+        move(xInicial++, yInicial++)
+
+
+}, 20);
