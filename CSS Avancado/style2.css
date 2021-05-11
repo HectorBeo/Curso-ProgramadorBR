@@ -1,0 +1,22 @@
+* {
+    padding: 5px;
+}
+
+[width]{
+    color:red;
+}
+
+[title="teste"]{
+    color:blue;
+}
+
+/**PSEUDO CLASSES**/
+
+input:focus{
+    color:red;
+}
+
+li:hover
+{
+    color:green;
+}
