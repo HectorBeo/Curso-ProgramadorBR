@@ -1,0 +1,27 @@
+.container{
+    display:flex;
+    background-color: grey;
+    height:400px;
+    color:white;
+
+    align-content:center;
+}
+
+.r1{
+    background-color: hotpink;
+}
+
+.r2{
+    background-color: red;
+    flex-shrink: 0;
+}
+
+.r3{
+    background-color: blue;
+    flex-grow: 1;
+}
+
+.rect{
+    width:300px;
+    height:300px;
+}
