@@ -1,0 +1,40 @@
+.r1{
+    background-color: red;
+}
+.r2{
+    background-color: green;
+}
+.r3{
+    background-color: blue;
+}
+.r4{
+    background-color: red;
+}
+.r5{
+    background-color: green;
+}
+.r6{
+    background-color: blue;
+}
+
+.container{
+    color:white;
+    display: grid;
+/*
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 10% 200px auto;
+*/
+    grid-template: auto auto / auto auto auto;
+    padding:10px;
+    background-color:grey;
+    height:400px;
+    grid-gap:10px;
+
+    align-items: center;
+    justify-items:center;
+}
+
+.rect{
+    width:150px;
+    height:150px;
+}
